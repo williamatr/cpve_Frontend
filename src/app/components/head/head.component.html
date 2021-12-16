@@ -1,0 +1,15 @@
+<div class="header-container">
+  <div class="header-logo">
+    <div class="header-user-logo" *ngIf="showUserLogo">
+        <img class="header-logo-img" src="assets\logos\TitleUserCPVE.png">
+    </div>
+    <div class="header-admin-logo" *ngIf="showAdminLogo">
+        <img class="header-logo-img" src="assets\logos\TitleAdminCPVE.png">
+    </div>
+  </div>
+  <div class="header-options">
+      <a routerLink="/start-user"><button class="header-button"  routerLinkActive="active">Plataforma Usuarios</button></a>
+      <a routerLink="/start-admin"><button class="header-button"  routerLinkActive="active">Plataforma Administrador</button></a>
+  </div>
+</div>
+

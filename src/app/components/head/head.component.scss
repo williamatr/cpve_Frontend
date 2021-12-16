@@ -1,0 +1,49 @@
+.header-container{
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 4fr 1fr;
+  background-color: #016D38;
+  width: auto;
+}
+.header-admin-logo {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  padding: 2%;
+}
+.header-user-logo{
+  display: flex;
+  justify-content: center;
+  position: relative;
+  padding: 2%;
+}
+.header-options{
+  align-items: center;
+  justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  position: relative;
+  padding: 5%;
+}
+.header-button{
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.3em;
+  color: #FFE986;
+  display: flex;
+  align-items: center;
+  background-color: #016D38;
+  justify-content: center;
+  border: 0;
+  width: 100%;
+} .header-button:hover{
+  background-color: #288A5D;
+  color: #F3F3F3;
+}.header-button.active{
+  color: #F3F3F3;
+}
+
+a{
+  text-decoration: none;
+}
