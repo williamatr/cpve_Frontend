@@ -1,12 +1,15 @@
-<header class="user-header-container">
-  <app-head [showAdminLogo]=" showAdminLogoHeader"></app-head>
+<header class="start-user-header-container">
+  <app-head [showAdminLogo]="showAdminLogoHeader"></app-head>
 </header>
 <body>
-
-  <p>start-user works!</p>
-  <div class="user-buttons-container">
-    <a><button mat-raised-button>Iniciar Sesion</button></a>
-    <a><button mat-raised-button>Registrarse</button></a>
+  <div class="start-user-container">
+    <div class="start-user-buttons-container">
+      <a routerLink="/ingreso-usuario">
+        <button class="start-user-btn">Iniciar Sesion</button>
+      </a>
+      <a routerLink="/registro-usuario">
+        <button class="start-user-btn">Registrarse</button>
+      </a>
+    </div>
   </div>
-
 </body>

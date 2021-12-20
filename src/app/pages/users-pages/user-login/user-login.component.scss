@@ -1,1 +1,43 @@
 @import "../../../app.component.scss";
+
+@mixin options-img-menu{
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 100%;
+}
+@mixin alin-items{
+  align-items: center;
+  justify-content: center;
+}
+
+
+.user-login-container{
+  padding-top: 150px;
+  position: relative;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr;
+}
+
+.user-login-btn{
+  font-size: 2em;
+  color: #016D38;
+  font-weight: bold;
+
+  background-color: white;
+
+  border: 2px solid;
+  border-radius: 2em;
+  border-color: #016D38;
+
+  padding: 1% 2% 1% 2%;
+
+}
+
+a{
+  display: flex;
+  @include alin-items;
+  margin: 5%;
+
+  text-decoration: none;
+}

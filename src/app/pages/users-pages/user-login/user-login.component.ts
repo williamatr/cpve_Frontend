@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UserLoginComponent implements OnInit {
 
+  showAdminLogoHeader: boolean = false;
+
   constructor() { }
 
   ngOnInit(): void {
