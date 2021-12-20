@@ -1,0 +1,131 @@
+@mixin options-img-menu{
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 100%;
+}
+@mixin alin-items{
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-user-container{
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 4fr 9fr;
+  background-color: #016D38;
+  width: auto;
+}
+.menu-user-logo{
+  @include alin-items;
+  position: relative;
+  padding: 2%;
+}
+.menu-logo-img{
+  width: 100%;
+  height: auto;
+}
+.menu-options{
+  @include alin-items;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  position: relative;
+  padding: 0.2%;
+}
+.menu-link{
+  display: flex;
+  background-color: #016D38;
+  width: auto;
+  height: 100%;
+  border: 5%;
+  @include alin-items;
+}.menu-link:hover{
+  background-color: #288A5D;
+}
+
+a{
+  text-decoration: none;
+}
+
+//Css para interactividad de botones
+
+#Home-btn{
+  background-image: url("../../../assets/icons/BtnHomeOff.png");
+  @include options-img-menu
+} #Home-btn:hover{
+  background-image: url("../../../assets/icons/BtnHomeOn.png");
+}#Home-btn.active{
+  background-image: url("../../../assets/icons/BtnHomeOn.png");
+}
+
+#Net-btn{
+  background-image: url("../../../assets/icons/BtnNetworkOff.png");
+  @include options-img-menu
+} #Net-btn:hover{
+  background-image: url("../../../assets/icons/BtnNetworkOn.png");
+}#Net-btn.active{
+  background-image: url("../../../assets/icons/BtnNetworkOn.png");
+}
+
+#Msg-btn{
+  background-image: url("../../../assets/icons/BtnMsgOff.png");
+  @include options-img-menu
+} #Msg-btn:hover{
+  background-image: url("../../../assets/icons/BtnMsgOn.png");
+}#Msg-btn.active{
+  background-image: url("../../../assets/icons/BtnMsgOn.png");
+}
+
+#Prjt-btn{
+  background-image: url("../../../assets/icons/BtnPjctOff.png");
+  @include options-img-menu
+} #Prjt-btn:hover{
+  background-image: url("../../../assets/icons/BtnPjctOn.png");
+}#Prjt-btn.active{
+  background-image: url("../../../assets/icons/BtnPjctOn.png");
+}
+
+#Edu-btn{
+  background-image: url("../../../assets/icons/BtnEduOff.png");
+  @include options-img-menu
+} #Edu-btn:hover{
+  background-image: url("../../../assets/icons/BtnEduOn.png");
+}#Edu-btn.active{
+  background-image: url("../../../assets/icons/BtnEduOn.png");
+}
+
+#Blog-btn{
+  background-image: url("../../../assets/icons/BtnBlogOff.png");
+  @include options-img-menu
+} #Blog-btn:hover{
+  background-image: url("../../../assets/icons/BtnBlogOn.png");
+}#Blog-btn.active{
+  background-image: url("../../../assets/icons/BtnBlogOn.png");
+}
+
+#Event-btn{
+  background-image: url("../../../assets/icons/BtnEventOff.png");
+  @include options-img-menu
+} #Event-btn:hover{
+  background-image: url("../../../assets/icons/BtnEventOn.png");
+}#Event-btn.active{
+  background-image: url("../../../assets/icons/BtnEventOn.png");
+}
+
+#Award-btn{
+  background-image: url("../../../assets/icons/BtnAwardOff.png");
+  @include options-img-menu
+} #Award-btn:hover{
+  background-image: url("../../../assets/icons/BtnAwardOn.png");
+}#Award-btn.active{
+  background-image: url("../../../assets/icons/BtnAwardOn.png");
+}
+
+#My-btn{
+  background-image: url("../../../assets/icons/BtnMyOff.png");
+  @include options-img-menu
+} #My-btn:hover{
+  background-image: url("../../../assets/icons/BtnMyOn.png");
+}#My-btn.active{
+  background-image: url("../../../assets/icons/BtnMyOn.png");
+}

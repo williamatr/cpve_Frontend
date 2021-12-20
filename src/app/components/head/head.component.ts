@@ -10,6 +10,7 @@ export class HeadComponent implements OnInit {
 
   @Input() showUserLogo: boolean = true;
   @Input() showAdminLogo: boolean = true;
+  @Input() showOptions: boolean = true;
 
   constructor(private router: Router) { }
 

@@ -1,0 +1,53 @@
+@mixin alin-items{
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-user-container{
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 3fr 5fr;
+  background-color: #016D38;
+  width: auto;
+}
+.menu-user-logo{
+  @include alin-items;
+  position: relative;
+  padding: 2%;
+}
+.menu-logo-img{
+  width: auto;
+  height: auto;
+}
+.menu-options{
+  @include alin-items;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  position: relative;
+  padding: 0.2%;
+}
+.menu-link{
+  @include alin-items;
+
+  display: flex;
+  background-color: #016D38;
+  width: auto;
+  height: 100%;
+  border: 5%;
+
+  font-style: normal;
+  font-weight: bold;
+  font-size: 2em;
+  color: #FFDC5D;
+}.menu-link:hover{
+  background-color: #288A5D;
+  color: #F3F3F3;
+}.menu-link.active{
+  background-color: #F3F3F3;
+  color: #016D38;
+}
+
+a{
+  text-decoration: none;
+}

@@ -1,0 +1,23 @@
+@import "../../../app.component.scss";
+
+.notfound-container{
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr;
+
+}
+.notfound-image-container{
+  display: flex;
+  justify-content: center;
+  position: relative;
+  padding: 2%;
+}
+.notfound-img{
+  width: 70%;
+}
+.notfound-button-container{
+  display: flex;
+  justify-content: center;
+  position: relative;
+  padding: 2%;
+}

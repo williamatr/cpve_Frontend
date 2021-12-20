@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MenuUserComponent implements OnInit {
 
+  iconHomeOff: string = "assets/icons/BtnHomeOff.png";
+
   constructor() { }
 
   ngOnInit(): void {

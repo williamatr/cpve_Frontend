@@ -7,9 +7,9 @@
         <img class="header-logo-img" src="assets\logos\TitleAdminCPVE.png">
     </div>
   </div>
-  <div class="header-options">
-      <a routerLink="/start-user"><button class="header-button"  routerLinkActive="active">Plataforma Usuarios</button></a>
-      <a routerLink="/start-admin"><button class="header-button"  routerLinkActive="active">Plataforma Administrador</button></a>
+  <div class="header-options" *ngIf="showOptions">
+      <a routerLink="/ppal-ususario"><button class="header-button"  routerLinkActive="active">Plataforma Usuarios</button></a>
+      <a routerLink="/ppal-admin"><button class="header-button"  routerLinkActive="active">Plataforma Administrador</button></a>
   </div>
 </div>
 

@@ -1,0 +1,7 @@
+@import "../../../app.component.scss";
+
+.client-table-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+}

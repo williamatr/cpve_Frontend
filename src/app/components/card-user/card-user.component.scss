@@ -1,0 +1,14 @@
+@mixin options-img-menu{
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 100%;
+}
+@mixin alin-items{
+  align-items: center;
+  justify-content: center;
+}
+
+
+.main-card-container{
+  background-color: white;
+}

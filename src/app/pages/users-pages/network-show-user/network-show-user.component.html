@@ -1,0 +1,62 @@
+<header class="network-show-user-header-container">
+  <app-menu-user></app-menu-user>
+</header>
+<body>
+  <div class="show-user-container">
+    <div class="show-user-data">
+      <div class="show-user-data-row1">
+        <div class="show-user-data-row1-colum1">
+          <h3>
+            {{ user.name }}
+          </h3>
+          <h4>
+            {{ rol.name }}
+          </h4>
+        </div>
+        <div class="show-user-data-row1-colum2">
+          <button (click)="conect()" *ngIf="showConect"> Conectar </button>
+          <button (click)="unconect()" *ngIf="showUnconect"> Desconectar </button>
+        </div>
+      </div>
+      <div class="show-user-data-row2">
+        <div class="show-user-data-row2-colum1">
+          <strong> Informacion de contacto </strong>
+          <p>
+            {{ user.phone }}
+          </p>
+          <div>
+            <p>{{ user.city }},</p>
+            <p>
+              {{ user.country }}
+            </p>
+          </div>
+          <p>
+            {{ user.email }}
+          </p>
+        </div>
+        <div class="show-user-data-row2-colum2">Hola aca van categorias</div>
+      </div>
+    </div>
+
+    <div class="show-user-post">
+      <h2>Publicaciones {{ user.name }}</h2>
+      <div>Hola soy una publicacion</div>
+    </div>
+
+    <div class="show-user-projects">
+      <h2>Proyectos {{ user.name }}</h2>
+      <div>Hola soy un proyecto</div>
+    </div>
+
+    <div class="show-user-trainings">
+      <h2>Capacitaciones {{ user.name }}</h2>
+      <div>Hola soy una capacitacion</div>
+    </div>
+
+    <div class="show-user-blogposts">
+      <h2>Entradas {{ user.name }}</h2>
+      <div>Hola soy una publicacion</div>
+    </div>
+
+  </div>
+</body>

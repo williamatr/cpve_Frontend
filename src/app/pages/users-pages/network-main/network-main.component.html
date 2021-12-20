@@ -1,0 +1,19 @@
+<header class="network-header-container">
+  <app-menu-user></app-menu-user>
+</header>
+
+<body class="network-body">
+  <span class="network-title">Lista de usuarios
+  </span>
+  <div class="client-table-container">
+    <app-card-user
+      *ngFor="let user of usersDto"
+        [user]="user"
+        [rol]="roles[user.idRol]">
+    </app-card-user>
+  </div>
+
+</body>
+<div class="page-buttons-container">
+
+</div>
