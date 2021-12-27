@@ -23,17 +23,17 @@ export class UserService {
   }
 
   public getUsersPage(page: number, size:number): Observable<UserGetDto[]>{
-    this.configUrl = `${environment.cpveUrl}/user/pageuser?page=${page}&size=${size}`;
+    this.configUrl = `${environment.cpveUrl}/user/pageuser/?page=${page}&size=${size}`;
     return this.httpClient.get<UserGetDto[]>(this.configUrl);
   }
 
   public saveUser(UserPostDto:UserPostDto): Observable<User>{
-    this.configUrl = `${environment.cpveUrl}/user/saveuser`;
+    this.configUrl = `${environment.cpveUrl}/user/save/`;
     return this.httpClient.post<User>(this.configUrl,UserPostDto);
   }
 
   public updateUser(userPutDto: UserPutDto ,id: number):Observable<User>{
-    this.configUrl = `${environment.cpveUrl}/user/${id}`;
+    this.configUrl = `${environment.cpveUrl}/user/update/${id}`;
     return this.httpClient.put<User>(this.configUrl,userPutDto);
   }
 

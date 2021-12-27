@@ -1,7 +1,12 @@
 @import "../../../app.component.scss";
 
-.client-table-container {
+.network-cards-container {
+  padding:5%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 
+}
+
+app-card-user{
+  padding:2%;
 }

@@ -12,10 +12,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomeUserComponent } from './pages/users-pages/home-user/home-user.component';
 import { StartUserComponent } from './pages/users-pages/start-user/start-user.component';
 import { StartAdminComponent } from './pages/admin-pages/start-admin/start-admin.component';
-import { MenuAdminComponent } from './components/menu-admin/menu-admin.component';
-import { MenuUserComponent } from './components/menu-user/menu-user.component';
 import { FormLoginComponent } from './components/form-login/form-login.component';
-import { HeadComponent } from './components/head/head.component';
 import { PageNotFoundComponent } from './pages/users-pages/page-not-found/page-not-found.component';
 import { ProjectShowOneComponent } from './pages/users-pages/project-show-one/project-show-one.component';
 import { ProjectMainComponent } from './pages/users-pages/project-main/project-main.component';
@@ -42,10 +39,11 @@ import { AdminUserEditComponent } from './pages/admin-pages/admin-user-edit/admi
 import { AdminEventMainComponent } from './pages/admin-pages/admin-event-main/admin-event-main.component';
 import { AdminEventEditComponent } from './pages/admin-pages/admin-event-edit/admin-event-edit.component';
 import { AdminEventCreateComponent } from './pages/admin-pages/admin-event-create/admin-event-create.component';
-import { AdminAwardMainComponent } from './pages/admin-pages/admin-award-main/admin-award-main.component';
-import { AdminAwardEditComponent } from './pages/admin-pages/admin-award-edit/admin-award-edit.component';
 import { CardMainComponent } from './components/card-main/card-main.component';
 import { CardUserComponent } from './components/card-user/card-user.component';
+
+import { SharedModule } from './shared/shared.module';
+
 
 @NgModule({
   declarations: [
@@ -53,10 +51,7 @@ import { CardUserComponent } from './components/card-user/card-user.component';
     HomeUserComponent,
     StartUserComponent,
     StartAdminComponent,
-    MenuAdminComponent,
-    MenuUserComponent,
     FormLoginComponent,
-    HeadComponent,
     PageNotFoundComponent,
     ProjectShowOneComponent,
     ProjectMainComponent,
@@ -83,8 +78,6 @@ import { CardUserComponent } from './components/card-user/card-user.component';
     AdminEventMainComponent,
     AdminEventEditComponent,
     AdminEventCreateComponent,
-    AdminAwardMainComponent,
-    AdminAwardEditComponent,
     CardMainComponent,
     CardUserComponent,
   ],
@@ -93,7 +86,8 @@ import { CardUserComponent } from './components/card-user/card-user.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]

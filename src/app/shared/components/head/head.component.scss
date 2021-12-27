@@ -5,6 +5,15 @@
   background-color: #016D38;
   width: auto;
 }
+
+.header-alternative{
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 4fr;
+  background-color: #016D38;
+  width: auto;
+}
+
 .header-admin-logo {
   display: flex;
   justify-content: center;
@@ -40,6 +49,7 @@
 } .header-button:hover{
   background-color: #288A5D;
   color: #F3F3F3;
+  cursor: pointer;
 }.header-button.active{
   color: #F3F3F3;
 }

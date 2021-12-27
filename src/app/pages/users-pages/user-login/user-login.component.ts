@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class UserLoginComponent implements OnInit {
 
   showAdminLogoHeader: boolean = false;
+  showOptionsHeader: boolean = false;
 
   constructor() { }
 

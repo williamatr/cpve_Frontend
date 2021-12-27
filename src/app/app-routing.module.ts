@@ -1,6 +1,9 @@
 
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import { RouterModule, Routes, PreloadAllModules } from '@angular/router';
+
+
+
 
 import { HomeUserComponent } from './pages/users-pages/home-user/home-user.component';
 import { StartUserComponent } from './pages/users-pages/start-user/start-user.component';
@@ -27,8 +30,6 @@ import { StartAdminComponent } from './pages/admin-pages/start-admin/start-admin
 import { AdminEventCreateComponent } from './pages/admin-pages/admin-event-create/admin-event-create.component';
 import { AdminEventEditComponent } from './pages/admin-pages/admin-event-edit/admin-event-edit.component';
 import { AdminEventMainComponent } from './pages/admin-pages/admin-event-main/admin-event-main.component';
-import { AdminAwardEditComponent } from './pages/admin-pages/admin-award-edit/admin-award-edit.component';
-import { AdminAwardMainComponent } from './pages/admin-pages/admin-award-main/admin-award-main.component';
 import { AdminUserEditComponent } from './pages/admin-pages/admin-user-edit/admin-user-edit.component';
 import { AdminUserMainComponent } from './pages/admin-pages/admin-user-main/admin-user-main.component';
 import { AdminProjectEditComponent } from './pages/admin-pages/admin-project-edit/admin-project-edit.component';
@@ -146,11 +147,7 @@ const routes: Routes = [
   },
   {
     path: 'admin-premios',
-    component: AdminAwardMainComponent
-  },
-  {
-    path: 'admin-editar-premios',
-    component: AdminAwardEditComponent
+    loadChildren: () => import('./admin/awards/awards.module').then(m => m.AwardsModule)
   },
   {
     path: 'admin-eventos',
@@ -175,7 +172,9 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, {
+    preloadingStrategy: PreloadAllModules
+  })],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
